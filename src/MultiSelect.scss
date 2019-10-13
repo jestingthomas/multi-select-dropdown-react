@@ -1,0 +1,82 @@
+.multi-select {
+  z-index: 1;
+  background-color: #fff;
+  border: 1px solid #bbccdd;
+  border-radius: 0.25rem;
+  height: 32px;
+  overflow: hidden;
+
+  .option-list {
+    border-top: 1px solid #dadada;
+    display: none;
+    padding: 5px 10px;
+    z-index: 1;
+    background-color: #fff;
+    width: 100%;
+    max-height: 250px;
+    overflow-y: auto;
+  }
+
+  .option-list:hover {
+    display: block;
+  }
+
+  .item-checkbox {
+    margin-right: 7px;
+  }
+
+  label {
+    font-weight: normal;
+    text-align: left;
+  }
+}
+
+.multi-select:hover {
+  width: inherit;
+  min-height: 32px;
+  height: inherit;
+  position: absolute;
+  box-shadow: 3px 4px 4px #dadada;
+
+  .search-input:focus + .option-list {
+    display: block;
+  }
+
+  .option-list {
+    display: block;
+  }
+}
+
+.options {
+  padding: 0.2rem 0;
+}
+
+.search-input,
+.search-input:focus {
+  font-size: 0.8rem;
+  font-family: inherit;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0 0.75rem;
+  border: none;
+  outline: none;
+  width: 100%;
+  border-radius: 0.25rem;
+}
+
+.pill {
+  display: inline-block;
+  border-radius: 20px;
+  padding: 0 0.5rem 0.1rem 0.5rem;
+  border: 1px solid #b9b9b9;
+  color: #000;
+  font-size: 0.7rem;
+  margin: 0.22rem 0.1rem 0 0.2rem;
+}
+
+.pill-remove {
+  color: #f50808 !important;
+  font-size: 1rem !important;
+  font-weight: bold;
+  padding-left: 5px;
+  cursor: pointer;
+}
